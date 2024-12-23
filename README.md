@@ -1,7 +1,6 @@
-```markdown
 # Cooking Sessions and User Orders Analysis
 
-This project analyzes cooking sessions and user orders from a dataset that includes session ratings, order details, and customer demographics. The analysis provides insights into user behavior, popular dishes, session performance, and key factors affecting orders.
+This project analyzes cooking sessions and user orders, providing insights into user behavior, popular dishes, session performance, and key factors affecting orders. It helps businesses understand customer preferences and optimize their offerings.
 
 ## Table of Contents
 
@@ -17,25 +16,25 @@ This project analyzes cooking sessions and user orders from a dataset that inclu
 
 ## Project Overview
 
-This project aims to analyze the relationship between cooking sessions and user orders, helping businesses understand customer preferences and optimize their service offerings. Key insights are drawn from session ratings, order frequency, and demographic factors.
+The project aims to analyze the relationship between cooking sessions and user orders, providing businesses with actionable insights based on customer demographics, session ratings, order details, and user preferences.
 
 ## Dataset Description
 
 The dataset includes the following columns:
 
-- **UserID**: Unique identifier for the user
-- **User Name**: User's name
-- **Age**: User's age
-- **Location**: User's location
-- **Registration Date**: Date when the user registered
+- **UserID**: Unique identifier for each user
+- **User Name**: Name of the user
+- **Age**: Age of the user
+- **Location**: Location of the user
+- **Registration Date**: Date the user registered
 - **Phone**: User's phone number
 - **Email**: User's email address
 - **Favorite Meal**: User's favorite meal
 - **Total Orders**: Total number of orders placed by the user
 - **Session ID**: Unique identifier for each cooking session
-- **Cooking Dish Name**: Name of the dish cooked in the session
+- **Cooking Dish Name**: Name of the dish cooked during the session
 - **Session Start & End**: Start and end time of the cooking session
-- **Duration (mins)**: Duration of the cooking session in minutes
+- **Duration (mins)**: Duration of the session in minutes
 - **Session Rating**: Rating given by the user for the session
 - **Order ID**: Unique identifier for each order
 - **Order Date**: Date when the order was placed
@@ -48,64 +47,60 @@ The dataset includes the following columns:
 
 ## Analysis Summary
 
-- **Data Cleaning**: The dataset was cleaned by removing duplicates, converting date columns into proper datetime format, and handling missing values.
-- **Exploratory Data Analysis (EDA)**: EDA was performed to understand the distribution of key variables such as age, orders, session duration, ratings, etc.
-- **User Demographics Analysis**: Insights were gathered based on the age group, location, and preferred meals of the users.
-- **Session Analysis**: A detailed analysis was performed to evaluate user sessions, including session duration, ratings, and their relation to orders placed.
-- **Order Analysis**: The most ordered dishes, session ratings, and dish popularity were analyzed.
-- **Correlations**: Correlation between different features (e.g., session ratings, order amount, and total orders) was examined to uncover potential business patterns.
+- **Data Cleaning**: The dataset was cleaned by removing duplicates, converting date columns into datetime format, and handling missing values.
+- **Exploratory Data Analysis (EDA)**: EDA was conducted to understand the distribution of key variables, such as age, orders, session duration, and ratings.
+- **User Demographics Analysis**: Analyzed user behavior based on age group, location, and preferred meals.
+- **Session Analysis**: Evaluated user sessions, focusing on session duration, ratings, and their relationship with orders placed.
+- **Order Analysis**: Analyzed the popularity of dishes, session ratings, and order trends.
+- **Correlation Analysis**: Examined correlations between session ratings, order amounts, and total orders to identify potential patterns.
 
 ## Key Insights
 
-- **User Behavior**: Most users fall within the age group of 30-40, with a balanced distribution across other age groups.
-- **Popular Dishes**: Certain dishes have higher order frequencies, while others are less popular.
-- **Session Ratings**: High session ratings are positively correlated with higher order amounts, suggesting that better cooking sessions lead to higher customer satisfaction and more orders.
-- **Peak Times**: Orders are higher during evenings, indicating that users prefer to place orders after work hours.
-- **Order Status**: Most orders are successfully completed, with a small percentage of cancellations.
+- **User Behavior**: The majority of users fall within the 30-40 age group, with a balanced distribution across other age groups.
+- **Popular Dishes**: Certain dishes are more frequently ordered, highlighting customer preferences.
+- **Session Ratings**: Higher session ratings are associated with higher order amounts, suggesting that better cooking sessions lead to more satisfied customers and higher order volumes.
+- **Peak Order Times**: Orders tend to peak in the evening, indicating that users prefer placing orders after work hours.
+- **Order Status**: The majority of orders are successfully completed, with a small percentage of cancellations.
 
 ## Technologies Used
 
-- **Python**: Used for data processing, analysis, and visualization
-- **Pandas**: For data manipulation and analysis
-- **Plotly**: For interactive data visualization
-- **Jupyter Notebook**: For interactive code execution and documentation
+- **Python**: Data processing, analysis, and visualization
+- **Pandas**: Data manipulation and analysis
+- **Seaborn (sns)**: Statistical data visualization
+- **Matplotlib**: For generating visualizations with Seaborn
+- **Jupyter Notebook**: Interactive code execution and documentation
 
 ## Installation Instructions
 
 To run this project locally, follow these steps:
 
 1. Clone this repository to your local machine:
-
    ```bash
    git clone https://github.com/your-username/cooking-session-analysis.git
    ```
 
 2. Navigate to the project directory:
-
    ```bash
    cd cooking-session-analysis
    ```
 
-3. Create a virtual environment (optional but recommended):
-
+3. (Optional) Create a virtual environment:
    ```bash
    python -m venv env
    ```
 
 4. Activate the virtual environment:
 
-   - On Windows:
+   - On **Windows**:
      ```bash
      .\env\Scripts\activate
      ```
-
-   - On macOS/Linux:
+   - On **macOS/Linux**:
      ```bash
      source env/bin/activate
      ```
 
 5. Install the required dependencies:
-
    ```bash
    pip install -r requirements.txt
    ```
@@ -114,15 +109,18 @@ To run this project locally, follow these steps:
 
 1. Open the Jupyter notebook `Cooking_Session_Analysis.ipynb`.
 2. Run the cells sequentially to load the dataset, clean the data, and generate insights.
-3. Review the interactive visualizations and the key findings generated by the analysis.
+3. Review the visualizations and key findings generated by the analysis.
 
 ## Contributing
 
-Contributions to this project are welcome! Please fork the repository, create a new branch, and submit a pull request with your changes. If you have any questions or suggestions, feel free to open an issue.
+Contributions are welcome! To contribute:
+
+1. Fork this repository.
+2. Create a new branch for your changes.
+3. Submit a pull request with your changes.
+
+Feel free to open an issue if you have any questions or suggestions.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-This version uses Plotly for visualization and explains each plot's significance in Markdown format. The interactivity of Plotly will enhance the analysis and make it more engaging.
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
