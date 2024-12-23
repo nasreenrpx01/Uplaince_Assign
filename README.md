@@ -125,6 +125,4 @@ Contributions to this project are welcome! Please fork the repository, create a 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 ```
 
-This version uses Plotly for visualization and explains each plot
-
-'s significance in Markdown format. The interactivity of Plotly will enhance the analysis and make it more engaging.
+This version uses Plotly for visualization and explains each plot's significance in Markdown format. The interactivity of Plotly will enhance the analysis and make it more engaging.
